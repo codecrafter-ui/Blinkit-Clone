@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section Styling */
+section {
+    margin-top: 20px;
+    /* Gap between sections */
+}
+
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
+    width: 90%;
+    max-width: 1330px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    left: 7%;
+}
+
+/* Header Styling */
+#s1-1,
+#s2-1,
+#s3-1,
+#s4-1,
+#s5-1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Link Styling */
+section a {
+    color: #318616;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    left: 68%;
+    font-weight: bold;
+}
+
+/* Flex Container for Slides */
+.flex-cont {
+    margin-top: 20px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Box Styling */
+.box {
+    height: 40vh;
+    width: 180px;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+/* Specific adjustments for visibility */
+.slides:first-child .box:first-child {
+    margin-left: 20px;
+    border-left: 2px solid #318616;
+}
+
+.slides:last-child .box:last-child {
+    margin-right: 20px;
+    border-right: 2px solid #318616;
+}
+
+/* Adjustments for the last boxes in each slide */
+.slides:first-child .box:last-child {
+    margin-right: 0;
+}
+
+.slides:last-child .box:last-child {
+    margin-right: 0;
+}
+
+
+
+
+.box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box span {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.box button {
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f7fff9;
+    border: 2px solid #318616;
+}
+
+/* Navigation arrow Styling */
+.navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    color: green;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.navigation.left {
+    left: 10px;
+}
+
+.navigation.right {
+    right: 10px;
+}
+
+/* Used for radio buttons hidding */
+input[type="radio"] {
+    display: none;
+}
+
+/* Carousel Transformations */
+#slide1:checked~.slides,
+#slide3:checked~.slides,
+#slide5:checked~.slides,
+#slide7:checked~.slides,
+#slide9:checked~.slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked~.slides,
+#slide4:checked~.slides,
+#slide6:checked~.slides,
+#slide8:checked~.slides,
+#slide10:checked~.slides {
+    transform: translateX(-100%);
+}
+
+/* Arrow visibility based on slides */
+#slide1:checked~.navigation.left,
+#slide3:checked~.navigation.left,
+#slide5:checked~.navigation.left,
+#slide7:checked~.navigation.left,
+#slide9:checked~.navigation.left {
+    display: none;
+}
+
+#slide2:checked~.navigation.left,
+#slide4:checked~.navigation.left,
+#slide6:checked~.navigation.left,
+#slide8:checked~.navigation.left,
+#slide10:checked~.navigation.left {
+    display: block;
+}
+
+#slide2:checked~.navigation.right,
+#slide4:checked~.navigation.right,
+#slide6:checked~.navigation.right,
+#slide8:checked~.navigation.right,
+#slide10:checked~.navigation.right {
+    display: none;
+}

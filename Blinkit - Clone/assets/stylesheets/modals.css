@@ -1,0 +1,412 @@
+/* Location Modal */
+#login {
+  position: fixed;
+  left: 23%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  background-color: #f4f6fc;
+  width: 35%;
+  height: 180px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#login:target {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  position: relative;
+  padding: 20px;
+  height: 100%;
+}
+
+.modal-content a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.location-icon {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.location-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.location-input-container p {
+  margin-left: 10px;
+}
+
+.detect-location-btn {
+  background-color: rgb(12, 131, 31);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.detect-location-btn:hover {
+  background-color: #459220;
+}
+
+.modal-search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid rgb(200, 200, 200);
+  outline: none;
+}
+
+.modal-search-input:focus {
+  border-color: #007bff;
+}
+
+.modal-search-input {
+  text-align: center;
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1.5px solid rgb(200, 200, 200);
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  margin-left: 2%;
+}
+
+.modal-search-input:hover,
+.modal-search-input:focus {
+  border-color: #007bff;
+}
+
+.modal-close-btn {
+  padding: 12px 50px 12px 50px;
+  background-color: blue;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+
+
+/* Login Modal */
+#loginModal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  height: 45vh;
+  width: 35%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 100px 50px 100px 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  z-index: 1002;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.close-arrow {
+  position: relative;
+  top: -55%;
+  font-size: 20px;
+  left: -5%;
+}
+
+.lm1 {
+  width: 12%;
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 165px;
+}
+
+#s5 {
+  font-size: 23px;
+  position: relative;
+  left: 15%;
+  top: -25%;
+}
+
+#s6 {
+  position: relative;
+  top: -20%;
+  left: 35%;
+  font-size: 15px;
+}
+
+.teln {
+  position: relative;
+  top: -15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  left: 18%;
+  z-index: 1;
+}
+
+.modal-search-input2 {
+  position: absolute;
+  top: 50%;
+  width: 55%;
+  padding: 10px 0;
+  border-radius: 8px;
+  border: 1.5px solid rgb(200, 200, 200);
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  margin-left: 6%;
+  /* Centering Placeholder */
+  text-align: center;
+  line-height: 30px;
+  height: 40px;
+}
+
+.cont-btn {
+  cursor: pointer;
+  position: relative;
+  left: 15%;
+  top: -5%;
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+  width: 68%;
+  background-color: #9c9c9c;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+}
+
+.cont-btn:hover {
+  background-color: #459220;
+}
+
+.s7 {
+  background-color: #fbfbfb;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 4vh;
+  width: 123%;
+  position: relative;
+  left: -11.5%;
+  top: 2%;
+}
+
+#s7 {
+  position: relative;
+  font-size: 14px;
+  top: -25%;
+  left: 7%;
+  color: #666666;
+}
+
+#loginModal:target {
+  display: block;
+  opacity: 1;
+}
+
+
+
+/* Cart Modal */
+#cartModal {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: #f5f7fd;
+  width: 350px;
+  height: 100%;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  opacity: 0;
+  z-index: 1003;
+}
+
+#cartModal:target {
+  right: 0;
+  opacity: 1;
+}
+
+.bill-details {
+  position: relative;
+  top: 5%;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.cancellation-policy {
+  position: relative;
+  top: 10%;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.bill-details h3,
+.cancellation-policy h4 {
+  margin: 0;
+}
+
+.bill-details .item {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.bill-details .item i {
+  margin-right: 10px;
+}
+
+.cart-button {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.login-tp {
+  position: relative;
+  top: 45%;
+  right: -5%;
+  padding: 20px 80px 20px 80px;
+  border-radius: 10px;
+  background-color: green;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+}
+
+.cart-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: black;
+  font-size: 28px;
+}
+
+
+
+
+
+
+/* Paan Modal CSS */
+.paan-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 37%;
+  max-height: 80vh;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 1002;
+  display: none;
+  overflow-y: auto;
+}
+
+.paan-modal:target {
+  display: block;
+}
+
+.paan-modal-content {
+  padding: 20px;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.modal-row {
+  margin: 10px 0;
+}
+
+.modal-row i {
+  color: red;
+  font-size: 1.5em;
+  float: left;
+  margin-right: 10px;
+}
+
+#s11,
+#s12 {
+  font-size: 13px;
+}
+
+#s12 a {
+  color: green;
+  text-decoration: underline green;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling buttons by class */
+.p-close1 {
+  background-color: white;
+  border: 1px solid green;
+  padding: 20px 90px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 15px;
+}
+
+.p-close1:hover {
+  background-color: green;
+  color: white;
+}
+
+.p-close1 a {
+  color: green;
+}
+
+.p-close1:hover a {
+  color: white;
+}
+
+
+.p-close2 {
+  padding: 20px 70px;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 6px;
+  font-size: 15px;
+}
+
+.p-close2 a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.p-close2:hover {
+  background-color: #459220;
+}

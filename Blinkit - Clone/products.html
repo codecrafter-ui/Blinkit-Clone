@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everything delivered in minutes | Blinkit</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/stylesheets/products.css">
+  <link rel="stylesheet" href="assets/stylesheets/products2.css">
+  <link rel="stylesheet" href="assets/stylesheets/modals.css">
+  <!-- Web Icon -->
+  <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="container" id="top">
+    <header>
+      <div class="logo">
+        <a href="main.html">
+          <img src="assets/images/logo.webp" alt="Logo" class="img">
+        </a>
+      </div>
+
+      <div class="location">
+        <span id="s1">Delivery in 10 minutes</span><br>
+        <span id="s2">Select location</span>
+        <a href="#login"><i class="fas fa-caret-down"></i></a>
+      </div>
+
+      <div class="search">
+        <i class="fas fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search...">
+      </div>
+
+      <div class="login-btn">
+        <a href="#loginModal"><span id="s3">Login</span></a>
+      </div>
+
+      <div class="cart-btn">
+        <a href="#cartModal" class="cart-button">
+          <span id="s4">My Cart</span>
+          <i class="fas fa-cart-shopping"></i>
+        </a>
+      </div>
+    </header>
+  </div>
+
+
+  <!-- Location Modal -->
+  <div id="login">
+    <div class="modal-content">
+      <a href="#">&times;</a>
+      <h2>Welcome to <span style="color: green">blinkit</span></h2>
+      <i class="fas fa-map-marker-alt location-icon"></i>
+      <p style="margin-left: 28px; margin-top: -24px;">Please provide your delivery location to see products at nearby
+        store</p>
+      <div class="location-input-container">
+        <button class="detect-location-btn">Detect my location</button>
+        <span style="margin: 0 10px;">or</span>
+        <input type="search" class="modal-search-input" id="loct" placeholder="search delivery location">
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="loginModal">
+    <span class="close-arrow"><a href="#"><span class="cross-icon">&times;</span></a></span>
+    <img class="lm1" src="assets/images/login_modal_icon.svg" alt="Login Icon">
+    <br>
+    <strong><span id="s5">India's last minute app</span></strong><br>
+    <span id="s6">Log in or Sign up</span><br>
+    <br>
+    <div>
+      <span class="teln">+91</span>
+      <input type="text" class="modal-search-input2" placeholder="Enter mobile number" pattern="\d{10}" maxlength="10"
+        required>
+    </div>
+    <br>
+    <button class="cont-btn">
+      <a href="#" style="text-decoration: none; color: white">Continue</a>
+    </button>
+    <div class="s7">
+      <br><span id="s7">By continuing, you agree to our <span style="text-decoration: underline; cursor: pointer">Terms
+          of service</span> & <span style="text-decoration: underline; cursor: pointer">Privacy policy</span></span>
+    </div>
+  </div>
+
+  <!-- My Cart Modal -->
+  <div id="cartModal">
+    <span class="cart-close"><a href="#">&times;</a></span>
+    <h2>Shopping Cart</h2>
+    <p>Your cart is currently empty.</p>
+    <div class="bill-details">
+      <h3>Bill Details</h3>
+      <div class="item">
+        <i class="fa-solid fa-book"></i>
+        <span>Item details here</span>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-bicycle"></i>
+        <span>Delivery Charge</span>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span>Handling Charge</span>
+      </div>
+      <div>
+        <strong>Grand Total</strong>
+      </div>
+    </div>
+    <div class="cancellation-policy">
+      <h4>Cancellation Policy</h4>
+      <p>
+        Orders cannot be cancelled once packed for delivery. In case of
+        unexpected delays, a refund will be provided, if applicable.
+      </p>
+    </div>
+    <button class="login-tp">
+      <a href="#loginModal" style="text-decoration: none; color: white; font-size: 15px">Login to Proceed</a>
+    </button>
+  </div>
+
+
+  <!-- Nav List -->
+  <nav id="main-nav">
+    <ul>
+      <li><a href="#">Vegetables & Fruits</a></li>
+      <li><a href="#">Dairy & Breakfast</a></li>
+      <li><a href="#">Munchies</a></li>
+      <li><a href="#">Cold Drinks & Juices</a></li>
+      <li><a href="#">Instant & Frozen Food</a></li>
+      <li><a href="#">Tea, Coffee & Health Drinks</a></li>
+      <li><a href="#">Bakery & Biscuits</a></li>
+      <!-- <li><a href="#">More</a></li> -->
+      <li>
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle">More <span class="arrow"><i class="fas fa-angle-down"></i></span></a>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">Sweet Tooth</a></li>
+              <li><a href="#">Atta, Rice & Dal</a></li>
+              <li><a href="#">Dry Fruits, Masala & Oil</a></li>
+              <li><a href="#">Sauces & Spreads</a></li>
+              <li><a href="#">Masala Oats</a></li>
+              <li><a href="#">Paan Corner</a></li>
+              <li><a href="#">Oraganic & Premium</a></li>
+              <li><a href="#">Baby Care</a></li>
+              <li><a href="#">Pharma & Wellness</a></li>
+              <li><a href="#">Cleaning Essentials</a></li>
+              <li><a href="#">Home & Office</a></li>
+              <li><a href="#">Ice Creams & Desserts</a></li>
+              <li><a href="#">Personal Care</a></li>
+              <li><a href="#">Beauty & Cosmetics</a></li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Toys & Games</a></li>
+              <li><a href="#">Magzines</a></li>
+              <li><a href="#">Pet Care</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- Sub Nav List -->
+  <nav id="main-nav2">
+    <ul>
+      <li><a href="#"><img src="assets/images/im2.png" alt="">Milk</a></li>
+      <li><a href="#"><img src="assets/images/im3.png" alt="">Bread & Pav</a></li>
+      <li><a href="#"><img src="assets/images/im4.png" alt="">Juices</a></li>
+      <li><a href="#"><img src="assets/images/im5.png" alt="">Flakes & Kids Cereals</a></li>
+      <li><a href="#"><img src="assets/images/im6.png" alt="">Muesli & Granola</a></li>
+      <li><a href="#"><img src="assets/images/im7.png" alt="">Oats</a></li>
+      <li><a href="#"><img src="assets/images/im8.png" alt="">Paneer & Tofu</a></li>
+      <li><a href="#"><img src="assets/images/im8.png" alt="">Curd & Yogurt</a></li>
+      <li><a href="#"><img src="assets/images/im2.png" alt="">Milk</a></li>
+      <li><a href="#"><img src="assets/images/im3.png" alt="">Bread & Pav</a></li>
+      <li><a href="#"><img src="assets/images/im4.png" alt="">Juices</a></li>
+      <li><a href="#"><img src="assets/images/im5.png" alt="">Flakes & Kids Cereals</a></li>
+      <li><a href="#"><img src="assets/images/im6.png" alt="">Muesli & Granola</a></li>
+      <li><a href="#"><img src="assets/images/im7.png" alt="">Oats</a></li>
+      <li><a href="#"><img src="assets/images/im8.png" alt="">Paneer & Tofu</a></li>
+      <li><a href="#"><img src="assets/images/im8.png" alt="">Curd & Yogurt</a></li>
+      <li><a href="#"><img src="assets/images/im2.png" alt="">Milk</a></li>
+      <li><a href="#"><img src="assets/images/im3.png" alt="">Bread & Pav</a></li>
+      <li><a href="#"><img src="assets/images/im4.png" alt="">Juices</a></li>
+      <li><a href="#"><img src="assets/images/im5.png" alt="">Flakes & Kids Cereals</a></li>
+      <li><a href="#"><img src="assets/images/im6.png" alt="">Muesli & Granola</a></li>
+    </ul>
+  </nav>
+
+  <!-- Price Options  -->
+  <section id="sect1">
+    <span>Buy Milk Online</span>
+    <span id="t1">Sort By</span>
+    <div class="testpage-opt1">
+      <div class="custom-dropdown">
+        <details>
+          <summary style="color: green;">
+            Relevance
+            <i class="fas fa-angle-down arrow-icon" style="color: green;"></i>
+          </summary>
+          <div class="options">
+            <div class="option">
+              <input type="radio" id="radio1" name="radioOptions">
+              <label for="radio1">Price(High to low)</label>
+            </div>
+            <div class="option">
+              <input type="radio" id="radio2" name="radioOptions">
+              <label for="radio2">Price(low to High)</label>
+            </div>
+            <div class="option">
+              <input type="radio" id="radio3" name="radioOptions">
+              <label for="radio3">Discount(High to low)</label>
+            </div>
+            <div class="option">
+              <input type="radio" id="radio4" name="radioOptions"> <!-- Changed id to be unique -->
+              <label for="radio4">Name A to Z</label>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Main BOX -->
+  <main class="box-container1" onclick="window.location.href='product-detail.html';">
+    <div class="box-row">
+      <div class="box">
+        <img src="assets/images/t1.jpg" alt="Image 1" class="box-image">
+        <div class="box-text">
+          <p>Amul Gold Full Cream</p>
+          <p>Fresh Milk</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t2.jpg" alt="Image 2" class="box-image">
+        <div class="box-text">
+          <p>Amul Taaza Toned Fresh Milk</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t3.jpg" alt="Image 3" class="box-image">
+        <div class="box-text">
+          <p>Kellogg's Real Almond</p>
+          <p>Honey Corn Flakes</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t4.jpg" alt="Image 4" class="box-image">
+        <div class="box-text">
+          <p>Kellogg's Chocos</p>
+          <p>Chocos Multigrain..</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t5.jpg" alt="Image 5" class="box-image">
+        <div class="box-text">
+          <p>Kellogg's Original</p>
+          <p>Cereals Corn Flakes..</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-row">
+      <div class="box">
+        <img src="assets/images/t6.jpg" alt="Image 6" class="box-image">
+        <div class="box-text">
+          <p>Amul Moti Tonex Milk</p>
+          <p>(90 Days Shelf Life)</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t7.jpg" alt="Image 7" class="box-image">
+        <div class="box-text">
+          <p>Amul Gold Milk</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t8.jpg" alt="Image 8" class="box-image">
+        <div class="box-text">
+          <p>Amul Taaza</p>
+          <p>Homogenised Toned..</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t9.jpg" alt="Image 9" class="box-image">
+        <div class="box-text">
+          <p>Yakult Probotic Drink</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t10.jpg" alt="Image 10" class="box-image">
+        <div class="box-text">
+          <p>Amul Taaza Toned Milk</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-row">
+      <div class="box">
+        <img src="assets/images/t11.jpg" alt="Image 11" class="box-image">
+        <div class="box-text">
+          <p>Nestle a+ Slim Skimmed</p>
+          <p>Milk</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t12.jpg" alt="Image 12" class="box-image">
+        <div class="box-text">
+          <p>Yakult Light Probiotic</p>
+          <p>Drink</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t13.jpg" alt="Image 13" class="box-image">
+        <div class="box-text">
+          <p>Amul Slim 'n' Trim</p>
+          <p>Skimmed Milk (Zero..</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t14.jpg" alt="Image 14" class="box-image">
+        <div class="box-text">
+          <p>Amul Calci+ Milk</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t15.jpg" alt="Image 15" class="box-image">
+        <div class="box-text">
+          <p>Amul A2 Buffalo Milk</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-row">
+      <div class="box">
+        <img src="assets/images/t16.jpg" alt="Image 16" class="box-image">
+        <div class="box-text">
+          <p>Foodstrong Lactose</p>
+          <p>Free Milk</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/t17.jpg" alt="Image 17" class="box-image">
+        <div class="box-text">
+          <p>Nestle a+ Toned Milk</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/s6.jpg" alt="Image 18" class="box-image">
+        <div class="box-text">
+          <p>Amul Cow Milk</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/s6.jpg" alt="Image 19" class="box-image">
+        <div class="box-text">
+          <span>Box 19</span>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="assets/images/s6.jpg" alt="Image 20" class="box-image">
+        <div class="box-text">
+          <span>Box 20</span>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Footer Above BOX -->
+  <div class="parent-box">
+    <span class="pb1">Milk</span>
+
+    <p class="p1">Milk is often considered as a whole meal. It is a good source of many essential nutrients, including
+      calcium, protein, and vitamin D. Many people see it as a vital part of a balanced diet. Sources of milk and milk
+      products include cows, sheep, camels, goats, and many others. Milk alternatives include soy milk, almond milk,
+      flax milk, coconut milk, and hemp milk. Milk’s healthfulness depends on the individual and the type of milk they
+      consume. Pasteurized milk that is high in protein, low in fat, and free from unnecessary additives can be
+      healthful for many people. On the other hand, some flavored milks contain as much sugar as a can of soda. These
+      are not a healthful choice. Present-day cow’s milk is not a single product. It can be fresh or long life,
+      fat-free, lactose-free, fortified with added omega-3s, hormone-free, organic, or raw, among other options.</p>
+
+    <p class="p1">The nutritional breakdown of milk depends on the fat content and whether or not the manufacturer has
+      enriched it. Nowadays, many manufacturers fortify their milk products with extra vitamins. Milk’s nutrients can
+      benefit the body in various ways like Bone health, Brain health, Blood pressure and heart health, Depression,
+      Muscle building and weight loss etc.</p>
+
+    <span class="pb3">Which protein is best with milk?</span>
+    <p class="p1">Bovine milk protein is considered a high-quality, or complete protein, because it contains all 9 of
+      the essential amino acids in proportions resembling amino acid requirements. Due to the high quality of bovine
+      milk protein, it is regarded as a standard reference protein to evaluate the nutritive value of other food
+      proteins.</p>
+
+    <span class="pb3">What is the benefit of drinking milk?</span>
+    <p class="p1">Milk is often considered as a whole meal. It is a good source of many essential nutrients, including
+      calcium, protein, and vitamin D. Many people see it as a vital part of a balanced diet.</p>
+
+    <p class="p2">Milk’s nutrients can benefit the body in various ways like Bone health, Brain health, Blood pressure
+      and heart health, Depression, Muscle building and weight loss etc. Some of the health benefits are listed below:
+    </p>
+    <ul class="ul1">
+      <li>A Good Source of Quality Protein and essential nutrients: Milk is considered a “complete
+        protein,” meaning it contains all nine of the essential amino acids necessary for your body to function at an
+        optimal level. There are two main types of protein found in milk — casein and whey protein.</li>
+      <li>Milk is an excellent source of vitamins and minerals, including “nutrients of concern,” which are
+        under-consumed by many populations. It provides potassium, B12, calcium, and vitamin D, which are lacking in
+        many diets. Milk is also a good source of vitamin A, magnesium, zinc, and thiamine. Additionally, it’s an
+        excellent source of hundreds of different fatty acids, including conjugated linoleic acid.</li>
+      <li>Milk Benefits Bone Health: Drinking milk has long been associated with healthy bones. This is due to its
+        powerful combination of nutrients, including calcium, phosphorus, potassium, protein, and (in grass-fed,
+        full-fat dairy) vitamin K2. All of these nutrients are essential for maintaining strong, healthy bones.</li>
+      <li>Helps Prevent Weight Gain: Several studies have linked milk intake to a lower risk of obesity. Milk contains a
+        variety of components that may contribute to weight loss and prevent weight gain. For example, its high-protein
+        content, linoleic acid, and Calcium lowers the risk of being overweight or obese.</li>
+    </ul>
+
+    <span class="pb3">What are the disadvantages of milk?</span>
+    <p class="p1">Although milk may be a good choice for some, others can’t digest it or choose not to consume it. Many
+      people can’t tolerate milk because they’re unable to digest lactose, a sugar found in milk and dairy products. If
+      your body is not able to break down lactose properly, it travels through the digestive system and is broken down
+      by gut bacteria. Because of this reason, gassiness and other digestive issues can happen.</p>
+
+    <span class="pb3">What is the best time to drink milk? What happens if we drink milk at night?</span>
+    <p class="p1">As per Ayurveda, the best time to consume milk for adults is before bedtime. For kids, an early
+      morning dose of milk is recommended.</p>
+
+    <span class="pb3">Which milk brand is best?</span>
+    <p class="p1">Some of the best Milk Brands in India are listed below:</p>
+    <ul class="ul2">
+      <li>Amul Milk</li>
+      <li>Mother Dairy</li>
+      <li>Nestle</li>
+      <li>Avin</li>
+      <li>Dudhsagar Dairy</li>
+      <li>Schreiber Dynamix Dairies</li>
+      <li>Kwality</li>
+    </ul>
+
+    <span class="pb3">What is the most popular milk in the world?</span>
+    <p class="p1">Cow's milk is the most popular and commonly consumed dairy milk.</p>
+
+    <span class="pb3">Which milk brands are A2?</span>
+    <p class="p1">There has been growing interest in A2 milk globally. Milk contains two major groups of proteins:
+      caseins and whey proteins. A2 milk contains the A2 type of beta-casein protein whereas A1 milk contains A1 type of
+      beta casein. A1 protein is a natural mutation of A2 which occurred over 1,000 years ago, and on its digestion, A1
+      protein produces beta-casomorphin-7 (BCM-7).</p>
+
+    <p class="p1">There have been reports implicating A1 protein/BCM-7 in negative health effects like Ischaemic heart
+      disease, Type 1 diabetes, autism, inflammatory response and digestive discomfort etc., but the scientific
+      community believes the evidence is insufficient and inconclusive. Despite the lack of conclusive scientific
+      evidence from human studies, several players have started marketing A2 milk with claims that it is natural,
+      better, and free from negative effects.</p>
+
+    <p class="p1">Some of the Milk brands offering A2 Milk are listed below:</p>
+    <ul class="ul3">
+      <li>Amul Deshi A2 Milk</li>
+      <li>4S Milk</li>
+      <li>Dr. Moo</li>
+      <li>Desigo</li>
+      <li>Haritas</li>
+      <li>GoShrushti</li>
+    </ul>
+
+    <span class="pb3">How many calories are in a glass of milk (250ml)?</span>
+    <p class="p1">Full Cream Milk (250 ml) contains 161 calories. Full-cream cow milk: 93 calories. Skim milk: 55
+      calories.</p>
+
+    <span class="pb3">What are the major nutrients in milk?</span>
+    <p class="p1">Milk is one of the most nutritious drinks in the world. It's not only rich in high-quality protein but
+      also an excellent source of vitamins and minerals, such as:</p>
+    <ul class="ul4">
+      <li>Calcium</li>
+      <li>Riboflavin</li>
+      <li>Phosphorous</li>
+      <li>Vitamins A and B12</li>
+      <li>Potassium</li>
+      <li>Magnesium</li>
+      <li>Zinc</li>
+      <li>Iodine</li>
+    </ul>
+
+    <div class="price-section">
+      <div>
+        <span class="pb14">Buy Milk at Online Grocery Store in India</span>
+        <p class="p1_1">Buy from several popular brands like <a href="" style="color: #339743;">Amul, Yakult.</a>
+          <br>Are you super fond of online shopping
+          because you hate crowded supermarkets? Now you don't need to worry as Blinkit is delivering Milk at your
+          doorstep superfast with easy returns for your complete peace of mind. Get Milk delivered to your home in
+          minutes. You can check Milk price before buying. We deliver Milk at HR-NCR, Gurugram (Gurgaon), UP-NCR, Noida,
+          Mumbai, Kolkata, Lucknow, Bengaluru, Ahmedabad, North Delhi, West Delhi, South Delhi, Faridabad, Hyderabad,
+          Jaipur, Pune, Kanpur, Chennai, Mohali, Panchkula, Zirakpur, Chandigarh, Jalandhar, Ludhiana, Vadodara, Meerut.
+        </p>
+      </div>
+      <div>
+        <span class="pb15">Milk Price List</span>
+        <ol class="milk-price-list">
+          <li><a href="#" style="color: #339743;">Amul Gold Full Cream Fresh Milk</a> <span class="price">Rs. 34</span>
+          </li>
+          <li><a href="#" style="color: #339743;">Amul Taaza Toned Fresh Milk</a> <span class="price">Rs. 28</span></li>
+          <li><a href="#" style="color: #339743;">Mother Dairy Cow Fresh Milk</a> <span class="price">Rs. 29</span></li>
+          <li><a href="#" style="color: #339743;">Amul Cow Fresh Milk</a> <span class="price">Rs. 29</span></li>
+          <li><a href="#" style="color: #339743;">Mother Dairy Toned Fresh Milk</a> <span class="price">Rs. 28</span>
+          </li>
+          <li><a href="#" style="color: #339743;">Mother Dairy Full Cream Fresh Milk</a> <span class="price">Rs.
+              34</span></li>
+          <li><a href="#" style="color: #339743;">Amul Moti Toned Milk (90 Days Shelf Life)</a> <span class="price">Rs.
+              33</span></li>
+          <li><a href="#" style="color: #339743;">Amul Taaza Homogenised Toned Milk</a> <span class="price">Rs.
+              71</span></li>
+          <li><a href="#" style="color: #339743;">Amul A2 Buffalo Fresh Milk</a> <span class="price">Rs. 37</span></li>
+          <li><a href="#" style="color: #339743;">Humpy Farms A2 Cow Fresh Milk</a> <span class="price">Rs. 49</span>
+          </li>
+        </ol>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Top Section with Useful Links and Categories -->
+      <div class="footer-top">
+        <!-- Useful Links Section -->
+        <div class="footer-column">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="T&C.html">About</a></li>
+            <li><a href="T&C.html" target="_blank">Privacy</a></li>
+            <li><a href="T&C.html" target="_blank">Partner</a></li>
+            <li><a href="T&C.html" target="_blank">Careers</a></li>
+            <li><a href="T&C.html" target="_blank">Terms</a></li>
+            <li><a href="#">Franchise</a></li>
+            <li><a href="T&C.html" target="_blank">Blog</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Seller</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Warehouse</a></li>
+            <li><a href="#">Lead</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Deliver</a></li>
+            <li><a href="#">Value</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories Section with See All Link -->
+        <div class="footer-column">
+          <h3>Categories <a href="#" class="see-all">see all</a></h3>
+          <ul>
+            <li>Vegetables & Fruits</li>
+            <li>Dairy & Breakfast</li>
+            <li>Munchies</li>
+            <li>Cold Drinks & Juices</li>
+            <li>Instant & Frozen Food</li>
+            <li>Tea, Coffee & Health Drinks</li>
+            <li>Bakery & Biscuits</li>
+            <li>Sweet Tooth</li>
+            <li>Atta, Rice & Dal</li>
+            <li>Dry Fruits, Masala & Oil</li>
+            <li>Organic & Premium</li>
+            <li>Baby Care</li>
+            <li>Paan Corner</li>
+            <li>Cleaning Essentials</li>
+            <li>Home & Office</li>
+            <li>Pharma & Wellness</li>
+            <li>Personal Care</li>
+            <li>Pet Care</li>
+            <li>Ice Creams & Frozen Desserts</li>
+            <li>Books</li>
+            <li>Toys & Games</li>
+            <li>Beauty & Cosmetics</li>
+            <li>Print Store</li>
+            <li>Navratri Specials</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Section with App Icons and Social Media -->
+      <div class="footer-bottom">
+        <div class="footer-left">
+          <p>&copy; Blink Commerce Private Limited, 2016-2024</p>
+          <div class="app-icons">
+            <span style="color: #666666; margin-left: 20px;">Download App</span>
+            <a href="https://play.google.com/store/apps/details?id=com.grofers.customerapp&hl=en_IN"
+              target="_blank"><img src="assets/images/google-play-logo.png" alt="Google Play"
+                style="height: 53px; width: 80%;"></a>
+            <a href="https://apps.apple.com/in/app/blinkit-grocery-in-10-minutes/id960335206" target="_blank"><img
+                src="assets/images/apple-store-logo.png" alt="App Store">
+            </a>
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/blinkit.india/" class="facebook" target="_blank"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/letsblinkit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/letsblinkit/?hl=en" class="instagram" target="_blank"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://in.linkedin.com/company/letsblinkit" class="linkedin" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.threads.net/tag/Blinkit" class="threads" target="_blank"><i
+              class="fab fa-threads"></i></a>
+        </div>
+      </div>
+
+      <!-- Final Bottom Text -->
+      <div class="footer-end">
+        <p>“Blinkit” is owned & managed by "Blink Commerce Private Limited" and
+          is not related, linked or interconnected in whatsoever manner or
+          nature, to “GROFFR.COM” which is a real estate services business
+          operated by “Redstone Consultancy Services Private Limited”.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <a href="#top" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="assets/JS/Index.js">
+  </script>
+</body>
+
+</html>

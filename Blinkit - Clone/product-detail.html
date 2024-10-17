@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amul Gold Full Cream Milk</title>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="assets/stylesheets/modals.css">
+    <link rel="stylesheet" href="product.css">
+    <!-- CDN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header id="header">
+            <div class="logo">
+                <a href="main.html">
+                    <img src="assets/images/logo.webp" alt="Logo" class="img">
+                </a>
+            </div>
+
+            <div class="location">
+                <span id="s1">Delivery in 10 minutes</span><br>
+                <span id="s2">Select location</span>
+                <a href="#login"><i class="fas fa-caret-down"></i></a>
+            </div>
+
+            <div class="search">
+                <i class="fas fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search...">
+            </div>
+
+            <div class="login-btn">
+                <a href="#loginModal"><span id="s3">Login</span></a>
+            </div>
+
+            <div class="cart-btn">
+                <a href="#cartModal" class="cart-button">
+                    <span id="s4">My Cart</span>
+                    <i class="fas fa-cart-shopping"></i>
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Location Modal -->
+    <div id="login">
+        <div class="modal-content">
+            <a href="#">&times;</a>
+            <h2>Welcome to <span style="color: green">blinkit</span></h2>
+            <i class="fas fa-map-marker-alt location-icon"></i>
+            <p style="margin-left: 28px; margin-top: -24px;">Please provide your delivery location to see products at
+                nearby
+                store</p>
+            <div class="location-input-container">
+                <button class="detect-location-btn">Detect my location</button>
+                <span style="margin: 0 10px;">or</span>
+                <input type="search" class="modal-search-input" id="loct" placeholder="search delivery location">
+            </div>
+        </div>
+    </div>
+    <!-- Paan Modal -->
+    <div id="paanmodal" class="paan-modal">
+        <div class="paan-modal-content">
+            <span id="s8" class="modal-title">Please make sure....</span>
+
+            <div class="modal-row">
+                <i class="fa-solid fa-triangle-exclamation red-icon"></i>
+                <span id="s9">You are above 18 years of age and not buying tobacco on behalf of anyone who is a minor
+                    (under
+                    18 years of age)</span>
+            </div>
+
+            <div class="modal-row">
+                <i class="fa-solid fa-triangle-exclamation red-icon"></i>
+                <span id="s10">Your location is not in and around a school or college premises.</span>
+            </div>
+
+            <span id="s11">We are bound to report your account in case of any transgressions!</span>
+            <br><span id="s12"><a href="T&C.html" target="_blank">Read Terms & Conditions</a></span>
+
+            <div class="button-container">
+                <button class="p-close1"><a href="#">Cancel</a></button>
+                <button class="p-close2"><a href="paan.html">Yes, I Confirm</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal">
+        <span class="close-arrow"><a href="#"><span class="cross-icon">&times;</span></a></span>
+        <img class="lm1" src="assets/images/login_modal_icon.svg" alt="Login Icon">
+        <br>
+        <strong><span id="s5">India's last minute app</span></strong><br>
+        <span id="s6">Log in or Sign up</span><br>
+        <br>
+        <div>
+            <span class="teln">+91</span>
+            <input type="text" class="modal-search-input2" placeholder="Enter mobile number" pattern="\d{10}"
+                maxlength="10" required>
+        </div>
+        <br>
+        <button class="cont-btn">
+            <a href="#" style="text-decoration: none; color: white">Continue</a>
+        </button>
+        <div class="s7">
+            <br> <a href="T&C.html" target="_blank"><span id="s7">By continuing, you agree to our <span
+                        style="text-decoration: underline; cursor: pointer">Terms
+                        of service</span> & <span style="text-decoration: underline; cursor: pointer">Privacy
+                        policy</span></span></a>
+        </div>
+    </div>
+
+    <!-- My Cart Modal -->
+    <div id="cartModal">
+        <span class="cart-close"><a href="#">&times;</a></span>
+        <h2>Shopping Cart</h2>
+        <p>Your cart is currently empty.</p>
+        <div class="bill-details">
+            <h3>Bill Details</h3>
+            <div class="item">
+                <i class="fa-solid fa-book"></i>
+                <span>Item details here</span>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-bicycle"></i>
+                <span>Delivery Charge</span>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Handling Charge</span>
+            </div>
+            <div>
+                <strong>Grand Total</strong>
+            </div>
+        </div>
+        <div class="cancellation-policy">
+            <h4>Cancellation Policy</h4>
+            <p>
+                Orders cannot be cancelled once packed for delivery. In case of
+                unexpected delays, a refund will be provided, if applicable.
+            </p>
+        </div>
+        <button class="login-tp">
+            <a href="#loginModal" style="text-decoration: none; color: white; font-size: 15px">Login to Proceed</a>
+        </button>
+    </div>
+
+
+
+    <!-- Product Info Container-->
+    <div class="main-container">
+        <div class="image-section">
+            <input type="radio" id="img1" name="image" checked>
+            <input type="radio" id="img2" name="image">
+            <input type="radio" id="img3" name="image">
+            <input type="radio" id="img4" name="image">
+            <input type="radio" id="img5" name="image">
+            <input type="radio" id="img6" name="image">
+
+            <img src="prod1.jpg" alt="Product Image" class="view-image">
+
+            <div class="image-selection">
+                <label for="img1"><img src="prod1.jpg" alt="Image 1"></label>
+                <label for="img2"><img src="prod2.jpg" alt="Image 2"></label>
+                <label for="img3"><img src="prod3.jpg" alt="Image 3"></label>
+                <label for="img4"><img src="prod4.jpg" alt="Image 4"></label>
+                <label for="img5"><img src="prod5.jpg" alt="Image 5"></label>
+                <label for="img6"><img src="prod6.jpg" alt="Image 6"></label>
+            </div>
+
+            <div class="product-details">
+                <h2>Product Details</h2>
+                <h3>Full Cream Milk</h3>
+                <h4>Type</h4>
+                <p>Wholesome and healthy</p>
+                <h4>Key Features</h4>
+                <p>Pasteurised milk<br>Rich in calcium</p>
+                <h4>Unit</h4>
+                <p>500 ml</p>
+                <h4>FSSAI License</h4>
+                <p>10018021003047</p>
+                <h4>Shelf Life</h4>
+                <p>2 days</p>
+                <h4>Country of Origin</h4>
+                <p>India</p>
+                <h4>Customer Care Details</h4>
+                <p>Email: info@blinkit.com</p>
+                <h4>Return Policy</h4>
+                <p>The product is non-returnable. For a damaged, defective, expired or incorrect item, you can request a
+                    replacement within 24 hours of delivery. In case of an incorrect item, you may raise a replacement
+                    or return request only if the item is sealed/unopened/unused and in original condition.</p>
+                <h4>Packaging Type</h4>
+                <p>Polypack</p>
+                <h4>Seller</h4>
+                <p>Moonstone Ventures LLP</p>
+                <h4>Seller FSSAI</h4>
+                <p>13323999000008</p>
+                <h4>Description</h4>
+                <p>Amul Gold Full Cream Milk (Polypack) Milk is homogenized toned pasteurized milk. Rich and creamy,
+                    this milk is an excellent source of vitamin A and vitamin D that enhances growth and development of
+                    the body tissues and the brain.</p>
+                <h4>Disclaimer</h4>
+                <p>Every effort is made to maintain the accuracy of all information. However, actual product packaging
+                    and materials may contain more and/or different information. It is recommended not to solely rely on
+                    the information presented.</p>
+            </div>
+        </div>
+
+        <div class="text-section">
+            <p><a href="main.html">Home</a> / <a href="products.html">Milk</a> / <a href="product-detail.html">Amul Gold Full Cream Fresh Milk</a></p>
+            <h2>Amul Gold Full Cream Fresh Milk</h2>
+            <p><a href="products.html" class="green-link">View all by Amul <i class="fa-solid fa-caret-down"></i></a>
+            </p>
+            <div class="separator"></div>
+            <div class="price-section">
+                <span class="small-text">500 ml</span>
+                <span class="small-text2">MRP ₹34</span>
+                <span class="small-text3">(Inclusive of all taxes)</span>
+                <button class="add-btn" onclick="window.location.href='#loginModal';">ADD</button>
+            </div>
+            <div class="info-section">
+                <h3>Why Shop from Blinkit?</h3>
+                <div class="info-container">
+                    <div class="info">
+                        <img src="assets/images/av1.png" alt="Superfast Delivery">
+                        <div>
+                            <span>Superfast Delivery</span>
+                            <p>Get your order delivered to your doorstep at the earliest from dark stores near you.</p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="assets/images/av2.png" alt="Best Prices & Offers">
+                        <div>
+                            <span>Best Prices & Offers</span>
+                            <p>Best price destination with offers directly from the manufacturers.</p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="assets/images/av3.png" alt="Wide Assortment">
+                        <div>
+                            <span>Wide Assortment</span>
+                            <p>Choose from 5000+ products across food, personal care, household & other categories.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Top Section with Useful Links and Categories -->
+            <div class="footer-top">
+                <!-- Useful Links Section -->
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="T&C.html">About</a></li>
+                        <li><a href="T&C.html" target="_blank">Privacy</a></li>
+                        <li><a href="T&C.html" target="_blank">Partner</a></li>
+                        <li><a href="T&C.html" target="_blank">Careers</a></li>
+                        <li><a href="T&C.html" target="_blank">Terms</a></li>
+                        <li><a href="#">Franchise</a></li>
+                        <li><a href="T&C.html" target="_blank">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Seller</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Warehouse</a></li>
+                        <li><a href="#">Lead</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Deliver</a></li>
+                        <li><a href="#">Value</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories Section with See All Link -->
+                <div class="footer-column">
+                    <h3>Categories <a href="#" class="see-all">see all</a></h3>
+                    <ul>
+                        <ul>
+                            <li><a href="Nav-list1.html">Vegetables & Fruits</a></li>
+                            <li><a href="#">Dairy & Breakfast</a></li>
+                            <li><a href="#">Munchies</a></li>
+                            <li><a href="#">Cold Drinks & Juices</a></li>
+                            <li><a href="#">Instant & Frozen Food</a></li>
+                            <li><a href="#">Tea, Coffee & Health Drinks</a></li>
+                            <li><a href="#">Bakery & Biscuits</a></li>
+                            <li><a href="#">Sweet Tooth</a></li>
+                            <li><a href="#">Atta, Rice & Dal</a></li>
+                            <li><a href="#">Dry Fruits, Masala & Oil</a></li>
+                            <li><a href="#">Organic & Premium</a></li>
+                            <li><a href="#">Baby Care</a></li>
+                            <li><a href="#">Paan Corner</a></li>
+                            <li><a href="#">Cleaning Essentials</a></li>
+                            <li><a href="#">Home & Office</a></li>
+                            <li><a href="#">Pharma & Wellness</a></li>
+                            <li><a href="#">Personal Care</a></li>
+                            <li><a href="#">Pet Care</a></li>
+                            <li><a href="#">Ice Creams & Frozen Desserts</a></li>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Toys & Games</a></li>
+                            <li><a href="#">Beauty & Cosmetics</a></li>
+                            <li><a href="#">Print Store</a></li>
+                            <li><a href="#">Navratri Specials</a></li>
+                        </ul>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section with App Icons and Social Media -->
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <p>&copy; Blink Commerce Private Limited, 2016-2024</p>
+                    <div class="app-icons">
+                        <span style="color: #666666; margin-left: 20px;">Download App</span>
+                        <a href="https://play.google.com/store/apps/details?id=com.grofers.customerapp&hl=en_IN"
+                            target="_blank"><img src="assets/images/google-play-logo.png" alt="Google Play"
+                                style="height: 53px; width: 80%;"></a>
+                        <a href="https://apps.apple.com/in/app/blinkit-grocery-in-10-minutes/id960335206"
+                            target="_blank"><img src="assets/images/apple-store-logo.png" alt="App Store">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/blinkit.india/" class="facebook" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/letsblinkit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/letsblinkit/?hl=en" class="instagram" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://in.linkedin.com/company/letsblinkit" class="linkedin" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.threads.net/tag/Blinkit" class="threads" target="_blank"><i
+                            class="fab fa-threads"></i></a>
+                </div>
+            </div>
+
+            <!-- Final Bottom Text -->
+            <div class="footer-end">
+                <p>“Blinkit” is owned & managed by "Blink Commerce Private Limited" and
+                    is not related, linked or interconnected in whatsoever manner or
+                    nature, to “GROFFR.COM” which is a real estate services business
+                    operated by “Redstone Consultancy Services Private Limited”.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/JS/Index.js"></script>
+</body>
+
+</html>
